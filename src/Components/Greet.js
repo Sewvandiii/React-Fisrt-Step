@@ -7,7 +7,20 @@ import React from 'react'
 //This will not display in the browser since we dont export it to App component
 //ES6 arrow function sysntax
 
-export const Greet = () => <h1>Hello Sewvandi</h1>
-//this is called a "Named export"
+const Greet = props => {
 
-// export default Greet
+console.log(props)
+//props.name="Bruno" => cannot assign to read only property'name' of the object props
+//****props are immutable
+return( 
+<div>
+<h1>Hello {props.name} {props.surname}</h1>
+{props.children}
+</div> 
+)
+}
+//render the paragraph using props.childern
+//create a property called props
+//this is called a "Name export"
+
+export default Greet 
