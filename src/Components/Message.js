@@ -10,13 +10,11 @@ class Message extends Component{
 
         }
     }
-
     changeMessage(){
         this.setState({
-            message:'Thank youfor subscribing'
+            message:'Thank you for subscribing'
         })
     }
-
 
     render(){
         return(
