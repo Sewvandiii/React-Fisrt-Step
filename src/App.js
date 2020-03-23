@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App"> 
 
-    <Message />
-    <Counter />
-    {/*<Greet name = "Bruno" surname = "Charles">
+    {/* <Message />
+    <Counter /> */}
+    <Greet name = "Bruno" surname = "Charles">
     <p>This is childern props</p>  </Greet> 
 
     <Greet name = "Alice" surname = "Lavender">
@@ -27,7 +27,7 @@ function App() {
     <Welcome name = "Alice" surname = "Lavender"></Welcome>
 
     <Welcome name = "Bruno" surname = "Charles"  ></Welcome>
-    <Hello />*/}
+    {/* <Hello /> */}
     </div>
   );
 }
