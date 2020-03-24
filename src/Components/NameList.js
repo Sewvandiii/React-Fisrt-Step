@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person'
 
 function NameList() {
 
@@ -15,7 +16,7 @@ function NameList() {
         skill : 'Java'
     }
 ]
-    const personList = persons.map(person => <Person person = {person} />)
+    const personList = persons.map(person => <Person key = {person.id} person = {person} />)
     //passing person as a props to Person component
     return <div>{personList}</div> 
 
